@@ -1,0 +1,4 @@
+#!/bin/sh
+[ -f mpsd ] && rm -v mpsd 
+luastatic mpsd.lua talimat.lua rules.lua /usr/lib/liblua.a -I/usr/include/ -o mpsd
+rm -v mpsd.lua.c
